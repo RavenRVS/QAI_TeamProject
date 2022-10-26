@@ -53,7 +53,7 @@ public class PlayerTest {
 
         int expected = 6;
 
-        int actual = player.play(game, 0);
+        int actual = player.play(game, 6);
         assertEquals(expected, actual);
     }
 
@@ -89,7 +89,7 @@ public class PlayerTest {
         player.play(game1, 2);
         player.play(game2, 4);
 
-        Game expected = game2;
+        Game expected = game;
         Game actual = player.mostPlayerByGenre("Аркады");
         assertEquals(expected, actual);
 
